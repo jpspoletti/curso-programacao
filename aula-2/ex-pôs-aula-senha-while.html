@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+        let contador = 0
+        const senhaCorreta = 1234
+
+        while (true) {
+
+            let senha = prompt('digite sua senha')
+
+            if (senha == senhaCorreta) {
+                alert('Sua senha esta correta')
+                break;
+            } else {
+                alert('Senha incorreta tente novamente')
+                contador++;
+            }
+
+            if (contador == 5) {
+                alert('tente novamente mais tarde')
+                break;
+            }
+        }
+    </script>
+</body>
+
+</html>
