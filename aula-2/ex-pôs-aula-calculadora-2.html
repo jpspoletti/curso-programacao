@@ -8,6 +8,9 @@
 </head>
 
 <body>
+    <input type="text" id="valor1"/>
+    <input type="text" id="valor2"/>
+    <br/><br/>
     <button onclick="somarNumeros()">Somar</button>
     <button onclick="subtrairNumeros()">Subtrair</button>
     <button onclick="dividirNumeros()">Dividir</button>
@@ -18,8 +21,8 @@
         let numero2 = 0
 
         function pedirNumeros() {
-            numero1 = Number(prompt("digite o primeiro número"))
-            numero2 = Number(prompt("digite o segundo número"))
+            numero1 = Number(document.getElementById("valor1").value);
+            numero2 = Number(document.getElementById("valor2").value);
         }
 
         function somarNumeros() {
@@ -37,17 +40,10 @@
         function multiplicarNumeros() {
             pedirNumeros();
             let multiplicar = numero1 * numero2
-
             alert('A multiplicação dos números é:' + multiplicar)
         }
 
         function dividirNumeros() {
-
-            alert('A subtração dos números é:' + multiplicar)
-        }
-
-        function DividirNumeros() {
-
             pedirNumeros();
             let Dividir = numero1 / numero2
             alert('A divição dos números é:' + Dividir)
