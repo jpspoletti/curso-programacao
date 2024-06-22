@@ -1,6 +1,6 @@
 let f1 = 1
 let f2 = 1
-const fib = 7
+const fib = 10
 let somaf = 0
 
 for(let i=3;i<=fib;i++){
