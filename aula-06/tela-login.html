@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    body {}
+
+    #informacoes {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 350px;
+        height: 400px;
+        background: rgb(0, 121, 255);
+        background: linear-gradient(189deg, rgba(0, 121, 255, 1) 50%, rgba(0, 212, 255, 1) 80%);
+        border-radius: 25px;
+        padding: 15px;
+        font-size: 20px;
+        margin-top: 100px;
+    }
+
+    #informacoes>label {
+        margin-top: 10px;
+        font-size: 14pt;
+        width: 100%;
+    }
+
+    #informacoes>input {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        height: 35px;
+        line-height: 25px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    #informacoes>h1 {
+        text-align: center;
+    }
+
+    #btn {
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    #logar {
+        height: 30px;
+        width: 70px;
+        font-size: 15pt;
+        border-radius: 9px;
+    }
+
+    #atalho {
+        height: 30px;
+        width: 70px;
+        font-size: 20pt;
+        border-radius: 9px;
+    }
+
+    #botoes {
+        text-align: center;
+        margin-top: 20px;
+        padding: 5px;
+    }
+
+    #tela-inicial {
+        border: 5px solid gray;
+        width: 50px;
+        background-color: gray;
+        border-radius: 10px;
+        color: white;
+    }
+</style>
+
+<body>
+    <div id="informacoes">
+        <h1>Login</h1>
+
+        <label for="email">Email ou Usuário: </label>
+        <input type="text" id="email" placeholder="abacaxi@gmail.com">
+
+        <label for="senha">Senha: </label>
+        <input type="password" id="senha" placeholder="123_abacaxis">
+
+        <div id="botoes">
+            <button onclick="logar()" id="logar">logar</button>
+            <a href="Tela-cadastro.html" id="atalho">Cadastrar</a>
+        </div>
+        <a href="tela-inicial.html" id="tela-inicial">Voltar</a>
+    </div>
+    </div>
+    <script>
+        let login = false
+        function logar() {
+
+                alert("login feito com sucesso, seja bem- vindo novamente");
+        }
+    </script>
+</body>
+
+</html>

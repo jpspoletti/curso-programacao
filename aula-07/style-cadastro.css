@@ -1,0 +1,86 @@
+#body {
+    background-color: rgba(2, 119, 197, 0.897);
+}
+
+#formulario {
+
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 350px;
+    height: 580px;
+    background-color: white;
+    border: solid 4px black;
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#formulario>div>label {
+    display: inline-block;
+    width: 100%;
+    padding-top: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+#formulario>div>input {
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    height: 25px;
+    line-height: 25px;
+
+}
+
+#formulario>h1 {
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 35pt;
+    font-weight: bold;
+}
+
+#cadastra {
+    height: 50px;
+    width: 100%;
+    font-size: 20pt;
+    font-weight: bold;
+    border-radius: 9px;
+    margin-right: 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-color: rgba(2, 119, 197, 0.897);
+}
+
+#botoes {
+    text-align: center;
+}
+
+#tela-lista {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 5px solid rgb(179, 179, 179);
+    font-size: 20px;
+    background-color: rgb(179, 179, 179);
+    border-radius: 10px;
+    color: rgb(83, 83, 83);
+}
+
+#tela-inicial {
+    border: 5px solid rgb(179, 179, 179);
+    font-size: 20px;
+    background-color: rgb(179, 179, 179);
+    border-radius: 10px;
+    color: rgb(83, 83, 83);
+}
+
+#login {
+    border: 5px solid rgb(179, 179, 179);
+    font-size: 20px;
+    background-color: rgb(179, 179, 179);
+    border-radius: 10px;
+    color: rgb(83, 83, 83);
+}

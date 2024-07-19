@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-tela-usuarios.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body onload="listarUsuarios()">
+
+  <div id="PS">
+  <label >Lista de Usuários</label>
+  <a href="tela-inicial.html" id="tela-inicial">Voltar</a>
+  </div>
+
+    <a href="Tela-cadastro.html" id="cadastro"> _Novo_ </a>
+
+    <table class="table">
+        <thead>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Telefone</th> 
+          <th></th>  
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <script id="tmplLinha" type="text/template">
+        <tr>
+          <td>{{nome}}</td>
+          <td>{{email}}</td>
+          <td>{{telefone}}</td>
+          <td><button onclick="deletar({{id}})" id='delet'>delete</button></td>
+        </tr>
+      </script>
+
+
+
+</body>
+
+</html>

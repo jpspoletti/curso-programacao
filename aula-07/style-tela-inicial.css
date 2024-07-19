@@ -1,0 +1,41 @@
+
+
+#parte>h1 {
+    text-align: left;
+    font-size: 30pt;
+    width: 100%;
+    margin-bottom: 8px;
+    border-bottom: solid 5px rgb(0, 0, 0);
+}
+
+#btn {
+    text-align: left;
+    font-size: larger;
+}
+
+#trocar-pag {
+    text-align: right;
+    border: 10px solid grey;
+    background-color: gray;
+    border-radius: 15px;
+    margin-left: 25px;
+    color: white;
+}
+
+#cadastro {
+    border: 10px solid grey;
+    background-color: gray;
+    border-radius: 15px;
+    color: white;
+    margin-left: 400px;
+    margin: 5px;
+}
+
+#lista {
+    text-align: right;
+    border: 10px solid grey;
+    background-color: gray;
+    border-radius: 15px;
+    margin-left: 25px;
+    color: white;
+}
