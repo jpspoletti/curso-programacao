@@ -66,6 +66,15 @@
     border-radius: 10px;
     color: white;
 }
+#btn{
+    border: 5px solid gray;
+    width: 87px;
+    background-color: gray;
+    border-radius: 10px;
+    color: white;
+    font-size: 12pt;
+    margin: 4px;
+}
 
 #tela-inicial {
     border: 5px solid gray;

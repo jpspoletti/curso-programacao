@@ -2,9 +2,9 @@
     border-collapse: collapse;
     margin: 0 auto;
     margin-top: 20px;
-    font-size: 0.9em;
+    font-size: 1.2em;
     font-family: sans-serif;
-    min-width: 400px;
+    min-width: 1200px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -36,40 +36,46 @@
     color: #009879;
 }
 
-#cadastro{
-    margin-left: 420px;
-    margin-bottom: 30px;
-    border: 2px solid rgb(0, 0, 0);
-    font-size: 25px;
-    background-color: rgb(240, 240, 240);
-    border-radius: 5px;
-    color: rgb(83, 83, 83);
+#delet{ 
+    background-color: rgb(231, 77, 77);
+    border: 2px solid rgb(231, 77, 77);
+    border-radius: 6px;
+    height: 30px;
+    font-size: 1em;
 }
 
-#delet{
-    background-color: red;
-    font-weight: bold;
-}
-
-#PS{
-    border-bottom: solid 5px rgb(0, 0, 0);
-    margin-bottom: 30px;
-}
-
-#PS>label{
+#titulo{
     font-weight: bold;
     font-size: 35pt;
     text-align: left;
 }
 
+.topo{
+    margin-top: 25px;
+    min-height: 80px;
+    border-bottom: solid 5px rgb(4, 36, 11);
+    margin-bottom: 30px;
+}
 
-#tela-inicial {
+.btn-topo-esquerda{
     border: 2px solid rgb(0, 0, 0);
     font-size: 25px;
     background-color: rgb(240, 240, 240);
     border-radius: 5px;
     color: rgb(83, 83, 83);
-    position:static;
-    bottom: 5px;
-    margin-left: 1100px;
+    float: right;
+    margin-top: 10px;
+}
+
+#cadastro{ 
+    color: rgb(83, 83, 83);
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 25px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    float: left;
+}
+
+#usulog{
+    float: right;
 }

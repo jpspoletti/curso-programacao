@@ -8,16 +8,25 @@
     <link rel="stylesheet" href="style-tela-usuarios.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
     <script src="script.js"></script>
+    <script src="script-telas.js"></script>
 </head>
 
 <body onload="listarUsuarios()">
 
-  <div id="PS">
-  <label >Lista de Usuários</label>
-  <a href="tela-inicial.html" id="tela-inicial">Voltar</a>
+  <div class="topo">
+    <label id="titulo">Lista de Usuários</label>
+    <button onclick="telaInicial()" class="btn-topo-esquerda">Voltar</button>
+  </div>
+  <br/>
+  <div class="meio">
+    <button onclick="cadastrar()" id="cadastro">Novo</button>
+    <label id="usulog"></label>
+    <br>
+    <br>
   </div>
 
-    <a href="Tela-cadastro.html" id="cadastro"> _Novo_ </a>
+
+    
 
     <table class="table">
         <thead>

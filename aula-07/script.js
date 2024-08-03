@@ -36,7 +36,16 @@ function cadastrar() {
     alert('Usuário cadastrado com sucesso!👍')
 }
 
-function listarUsuarios() {
+function listarUsuarios() { 
+
+    let usulog = localStorage.getItem('usulog') || '';
+
+    if(usulog.length == 0){
+        alert('usuario nn logado por favor logar')
+        window.location.replace("tela-login.html");
+    }
+
+    document.getElementById('usulog').innerText = usulog
 
     //recuperar lista do LS ou criar lista vazia 
     let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
@@ -71,5 +80,23 @@ function deletar(id) {
 }
 
 function logar(){
+    const email = document.getElementById('email').value;
+    const senha = document.getElementById('senha').value;
+
+    let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+    usuarios = usuarios.filter(usuario => usuario.email == email && usuario.senha == senha);
     
+    if(usuarios.length == 1){
+
+        const usuario = usuarios[0]
+
+        localStorage.setItem('usulog', usuario.id)
+        alert('login efetuado com sucesso ' + usuario.id)
+
+    }else{
+
+        localStorage.setItem('usulog', '')
+        alert('email ou senha invalido')
+    }
 }
+

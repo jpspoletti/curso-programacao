@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Josh</title>
     <link rel="stylesheet" href="style-tela-inicial.css">
+    <script src="script-telas.js"></script>
 </head>
 
 <body>
@@ -14,11 +15,12 @@
         <h1> Site Josh</h1>
 
         <br>
-        <div id="btn">
 
-            <a href="tela-cadastro.html" id="cadastro">Cadastrar-se</a>
-            <a href="tela-login.html" id="trocar-pag">Login</a>
-            <a href="tela-lista-usuarios.html" id="lista">Lista de usuarios</a>
+        <div id="btn1">
+            <button onclick="cadastrar()" id="btn">Cadastrar-se</button>
+            <button onclick="login()" id="btn">Login</button>
+            <button onclick="listar()" id="btn" >Lista de usuarios</button>
+            <button onclick="logout()" id="btn">logout</button>
         </div>
 
 
